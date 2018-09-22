@@ -6,7 +6,7 @@ Returns a request token for Prizeprofile Twitter service.
 
 * `TWITTER_KEY` can be found on Twitter developer page.
 * `TWITTER_SECRET` can be found on Twitter developer page.
-* `CALLBACK_URI` where should the user be redirected to after they authorize the app.
+* `CALLBACK_URI` of location that the user should be redirected to after they authorize the app.
 
 ## Responses
 
