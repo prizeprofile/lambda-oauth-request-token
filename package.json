@@ -1,0 +1,16 @@
+{
+  "name": "lambda-oauth-request-token",
+  "version": "1.0.0",
+  "description": "Twitter oauth resource to obtain request token.",
+  "main": "index.js",
+  "dependencies": {
+    "oauth": "~0.9.13"
+  },
+  "devDependencies": {
+    "npm": "~2.13.0",
+    "grunt": "~0.4.5",
+    "grunt-aws-lambda": "~0.4.0"
+  },
+  "author": "Michael Bausano <bausanomichal@gmail.com>",
+  "license": "MIT"
+}
