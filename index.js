@@ -30,6 +30,9 @@ exports.handler = (_event, _context, callback) => {
       headers: {
         'Access-Control-Allow-Origin' : '*'
       },
-      body: JSON.stringify({ status: 503, error })
+      body: JSON.stringify({
+        status: 503,
+        error: 'Service temporarily unavailable.'
+      })
     }))
 }

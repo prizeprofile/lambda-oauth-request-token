@@ -19,10 +19,7 @@ Returns a request token for Prizeprofile Twitter service.
 ```
 
 ### 503
-There was an error while obtaining the token from Twitter.
+Is returned when there was an error while obtaining the token from Twitter.
 
 ## Deployment
 Deploy with `npm run deploy:{env}`.
-
-## Tests
-Yet to be written.
