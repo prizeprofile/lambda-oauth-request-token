@@ -23,6 +23,3 @@ Is returned when there was an error while obtaining the token from Twitter.
 
 ## Deployment
 Deploy with `npm run deploy:{env}`.
-
-## Tests
-Yet to be written.
