@@ -25,10 +25,11 @@ exports.handler = (_event, _context, callback) => {
       },
       body: JSON.stringify(res)
     }))
-    .catch(err => callback(null, {
+    .catch(error => callback(null, {
       statusCode: 503,
       headers: {
         'Access-Control-Allow-Origin' : '*'
-      }
+      },
+      body: JSON.stringify({ status: 503, error })
     }))
 }

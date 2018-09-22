@@ -1,16 +1,24 @@
 {
   "name": "lambda-oauth-request-token",
   "version": "1.0.0",
+  "author": "Michael Bausano <bausanomichal@gmail.com>",
+  "license": "MIT",
   "description": "Twitter oauth resource to obtain request token.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prizeprofile/lambda-oauth-request-token"
+  },
+  "scripts": {
+    "create:stage": "claudia create --name stage-oauth-request-token --region eu-west-1 --handler index.handler --role arn:aws:iam::365488455739:role/lambda_basic_execution --config claudia-stage.json",
+    "create:prod": "claudia create --name prod-oauth-request-token --region eu-west-1 --handler index.handler --role arn:aws:iam::365488455739:role/lambda_basic_execution --config claudia-prod.json",
+    "deploy:stage": "claudia update --config claudia-stage.json",
+    "deploy:prod": "claudia update --config claudia-prod.json"
+  },
   "dependencies": {
     "oauth": "~0.9.13"
   },
   "devDependencies": {
-    "npm": "~2.13.0",
-    "grunt": "~0.4.5",
-    "grunt-aws-lambda": "~0.4.0"
-  },
-  "author": "Michael Bausano <bausanomichal@gmail.com>",
-  "license": "MIT"
+    "claudia": "^5.1.1"
+  }
 }
